@@ -1,0 +1,16 @@
+.DS_Store
+
+.ipynb_checkpoints/
+__pycache__/
+
+.vscode/
+submission.csv
+temp.ipynb
+
+smoking-prediction_credentials.csv
+smoking-prediction_accessKeys.csv
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
