@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction</title>
+</head>
+<body>
+    <h1>Health Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" required><br><br>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" name="height" id="height" required><br><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" name="weight" id="weight" required><br><br>
+
+        <label for="waist">Waist (cm):</label>
+        <input type="number" name="waist" id="waist" required><br><br>
+
+        <label for="eyesight_left">Eyesight (Left):</label>
+        <input type="number" step="0.1" name="eyesight_left" id="eyesight_left" required><br><br>
+
+        <label for="eyesight_right">Eyesight (Right):</label>
+        <input type="number" step="0.1" name="eyesight_right" id="eyesight_right" required><br><br>
+
+        <label for="hearing_left">Hearing (Left):</label>
+        <input type="number" step="0.1" name="hearing_left" id="hearing_left" required><br><br>
+
+        <label for="hearing_right">Hearing (Right):</label>
+        <input type="number" step="0.1" name="hearing_right" id="hearing_right" required><br><br>
+
+        <label for="systolic_bp">Systolic BP:</label>
+        <input type="number" name="systolic_bp" id="systolic_bp" required><br><br>
+
+        <label for="diastolic_bp">Diastolic BP:</label>
+        <input type="number" name="diastolic_bp" id="diastolic_bp" required><br><br>
+
+        <label for="fasting_blood_sugar">Fasting Blood Sugar:</label>
+        <input type="number" name="fasting_blood_sugar" id="fasting_blood_sugar" required><br><br>
+
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="number" name="cholesterol" id="cholesterol" required><br><br>
+
+        <label for="triglyceride">Triglyceride:</label>
+        <input type="number" name="triglyceride" id="triglyceride" required><br><br>
+
+        <label for="hdl">HDL:</label>
+        <input type="number" name="hdl" id="hdl" required><br><br>
+
+        <label for="ldl">LDL:</label>
+        <input type="number" name="ldl" id="ldl" required><br><br>
+
+        <label for="hemoglobin">Hemoglobin:</label>
+        <input type="number" name="hemoglobin" id="hemoglobin" required><br><br>
+
+        <label for="serum_creatinine">Serum Creatinine:</label>
+        <input type="number" name="serum_creatinine" id="serum_creatinine" required><br><br>
+
+        <label for="ast">AST:</label>
+        <input type="number" name="ast" id="ast" required><br><br>
+
+        <label for="alt">ALT:</label>
+        <input type="number" name="alt" id="alt" required><br><br>
+
+        <label for="ggt">GGT:</label>
+        <input type="number" name="ggt" id="ggt" required><br><br>
+
+        <label for="dental_cavities">Dental Cavities:</label>
+        <input type="number" name="dental_cavities" id="dental_cavities" required><br><br>
+
+        <label for="waist_to_height_ratio">Waist-to-Height Ratio:</label>
+        <input type="number" step="0.01" name="waist_to_height_ratio" id="waist_to_height_ratio" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <p>{{ prediction_text }}</p>
+</body>
+</html>
